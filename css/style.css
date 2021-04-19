@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: linear-gradient(to right, #AFEEEE 40%, rgba(1, 124, 124, 70%) 100%);
+}
+/********Queries***/
+
+
+/**Nav Bar **/
+.navigation-links {
+    color:#AFEEEE;
+}
+
+.navigation-links:hover {
+    color:#AFEEEE;
+    font-weight: bold;
+    border-bottom: 2px solid #AFEEEE;
+}
+
+.navigation-brand {
+    width: 20%;
+    margin:0 2rem 0 auto;
+    position: relative;
+    top: 2.5rem;
+}
+
+.menu-icon {
+    width: 2rem;
+}
+
+.brand-logo {
+    width: 100%;
+}
+
+.active-page {
+    color:#AFEEEE;
+    font-weight: bold;
+    border-bottom: 2px solid #AFEEEE;
+}
+
+/***Body*********/
+.first-section {
+    display: flex;
+    align-items: center;
+    height: 50vmax;
+}
+
+.first-section-text {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+
+}
+
+.first-section-service {
+    font-size: 5vmax;
+}
+
+.first-section-image {
+    width: 30%;
+    margin:0 5rem 0 auto;
+}
+
+.cctv-image {
+    width: 100%;
+    
+}
+
+
+.second-section {
+    margin: auto !important;
+}
+
+.second-section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services-images {
+    width: 50%;
+}
+
+/********************footer****************/
+.social-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.social-icon {
+    width: 3vmax;
+    margin: 3rem 1rem;
+}
+
+.copy-rights {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
