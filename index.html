@@ -78,11 +78,20 @@
                 opacity: 0;
                 transition: 0.4s ease-in-out;
                 font-size: small;
-                height: 5rem;;
+                min-height: 5rem;
                 display: flex;
                 align-items: center;
-                width: 15rem;
+                width: 16rem;
+                display: flex;
+                flex-direction: column;
             }
+
+        #service-card-add-info {
+            background: #AFEEEE;
+            width: 15rem;
+            position: relative;
+            z-index: 10;
+        }
 
         .card-info {
                 display: flex;
@@ -196,42 +205,69 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center service-card" style="width: 18rem;">
-                          <h3 class="service-card-title">Boom/ Gate <br/>Guarding</h3>
-                          <div class="card-content">
+                        <h3 class="service-card-title">Guarding Security</h3>
+                        <div class="card-content">
                             <div class="card-info">
                                 <p>
-                                    Our securities guard properties to control traffic to and from buildings and grounds.
+                                    &bull; Retail
+                                    &bull; Residential
+                                    &bull; Commercial <br />
+                                    &bull; Industrial
+                                    &bull; Events
+                                    &bull; Domestic <br />
+                                    &bull; Mining
                                 </p>
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center service-card" style="width: 18rem;">
-                        <h3 class="service-card-title">Patrolling Guards</h3>
-                        <div class="card-content">
-                          <div class="card-info">
-                              <p>
-                                  Our securities make sure premises are safe by regularly making the rounds to prevent damage, burglary, and other unexpected occurrences.
-                              </p>
-                              
-                          </div>
-                      </div>
-                  </div>
+                        <h3 class="service-card-title">Fire / Evacuation Emergencies </h3>
+                        <div class="card-content" id="card-content">
+                            <div class="card-info">
+                                <p>
+                                    All our Security Officers are well trained on fire evacuation procedure, they are well informed on the
+                                    steps that they need to follow.
+
+                                    <a id="card-additional-info" tabindex="0" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Our steps on fire evacuation are:
+
+                                            1. Activate the fire alarm.
+
+                                            2. Call 911 immediately and provide information.
+
+                                            3. Assist injured personnel or notify emergency responders of the medical emergency.
+
+                                            4. Exit the building following emergency maps.
+
+                                            5. How to operate the fire extinguishers and so forth.
+                                       ">
+                                        Our Procedure
+                                    </a>
+
+
+
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="text-center service-card" style="width: 18rem;">
-                        <h3 class="service-card-title">Fire / Evacuation Emergencies </h3>
+                        <h3 class="service-card-title">Liaison with police and city emergence</h3>
                         <div class="card-content">
-                          <div class="card-info">
-                              <p>
-                                  Our Guards investigate the source of fire, confirm it and notify appropriate units (fire department, supervisor).
-                              </p>
-                              
-                          </div>
-                      </div>
-                  </div>
+                            <div class="card-info">
+                                <p>
+                                    Our Cameras enable you to view events live, and recorders archive footage for later reference.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
