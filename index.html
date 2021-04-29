@@ -10,6 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            '6LdsTr8aAAAAAHiVaNft9vNHcwntwzBSN4T_y7pC' : '6LdsTr8aAAAAAJi5gAAmyy2fz5B7NmUKvdLPwTUW'
+          });
+        };
+    </script>
+
     <style>
 
         #navbar-nav{
@@ -188,7 +196,7 @@
                     <a class="nav-link navigation-links active-page " aria-current="page" href="index.html" style="margin-right: 2rem;">Home</a>
                     <a class="nav-link navigation-links" href="#services" style="margin-right: 2rem;">Services</a>
                     <a class="nav-link navigation-links" href="#" style="margin-right: 2rem;">About</a>
-                    <a class="nav-link navigation-links" href="#" style="margin-right: 2rem;">Contact Us</a>
+                    <a class="nav-link navigation-links" href="contact.html" style="margin-right: 2rem;">Contact Us</a>
                 </div>
             </div>
             </div>
@@ -426,27 +434,8 @@
         </div>
     </footer>
 
-    <script>
-
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      
-      
-      
-        ga('create', 'UA-46156385-1', 'sirv.com');
-      
-        ga('send', 'pageview');
-      
-      
-      
-      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <script src="js/async.js" async></script>
+   
 </body>
 </html>
