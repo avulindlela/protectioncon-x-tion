@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protection Con-x-ion | Home</title>
+
+    <link rel="icon" href="https://mmatiniu.sirv.com/protectionconxion.co.za/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            '6LdsTr8aAAAAAHiVaNft9vNHcwntwzBSN4T_y7pC' : '6LdsTr8aAAAAAJi5gAAmyy2fz5B7NmUKvdLPwTUW'
+          });
+        };
+    </script>
+
+    <style>
+
+        #navbar-nav{
+            background-image: url(https://mmatiniu.sirv.com/protectionconxion.co.za/images/nav-background.png); 
+            background-size:cover; 
+            width: 60%;
+
+        }
+
+        .first-section {
+            background-image: url(https://mmatiniu.sirv.com/protectionconxion.co.za/images/home-background-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:fixed;
+        }
+
+        .btn:hover {
+            background-color: #AFEEEE !important;
+            color: black !important;
+        }
+
+        .section-two {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            width: 20rem;
+            height: 20rem;
+            background-size:contain;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left:auto;
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .card-content  {
+                position: absolute;
+                transition: 0.4s ease-in-out;
+                top:0rem;
+                padding-top: 17rem;
+
+            }
+
+        .card-content:hover {
+                position: absolute;
+                top: -17rem;
+                opacity: 1;
+            }
+
+        .card-content:hover p{
+                opacity: 1;
+            }
+
+        .card-content p {
+                background: #AFEEEE;
+                padding: 0 10px;
+                opacity: 0;
+                transition: 0.4s ease-in-out;
+                font-size: small;
+                height: 18rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18rem;
+                flex-direction: column;
+                
+            }
+
+       
+
+        /* #card-additional-info {
+            position:relative;
+        } */
+
+        #service-card-add-info {
+            background: #AFEEEE;
+            width: 15rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .more-service {
+            background-color: rgba(175,238,238, 70%);
+            padding: 3px;
+            border-radius: 10%;
+        }
+
+        .card-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+
+        .third-section {
+            height: 40vmax;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://mmatiniu.sirv.com/protectionconxion.co.za/images/home-background-2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        
+
+
+        /*Queries*/
+        @media screen and (max-width: 760px) {
+            #navbar-nav {
+                background: transparent;
+            }
+
+            .navigation-links {
+                color:Black;
+            }
+
+            .navigation-links:hover {
+                color:Black;
+                font-weight: bold;
+                border-bottom: 2px solid #AFEEEE;
+            }
+
+            .active-page {
+                color: black;
+                font-weight: bold;
+                border-bottom: 2px solid #AFEEEE;
+            }
+
+            
+        }
+
+        @media screen and (max-width: 470px) {
+            .navigation-brand {
+                width: 30%;
+                margin:0 2rem 0 auto;
+                position: relative;
+                top: 2.5rem;
+            }
+
+            #navbar-nav {
+                background:  #AFEEEE ;
+            }
+
+            
+
+            /* #navbar {
+                background: linear-gradient(to right, #AFEEEE 40%, rgba(1, 124, 124, 70%) 100%) !important;
+            } */
+
+        }
+    </style>
+</head>
+<body onscroll="collapseMenu()">
+    <div class="navigation-brand">
+        <a href="index.html">
+            <img class="brand-logo" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/logo.png" alt="ourfuturetalentmanagement">
+        </a>
+    </div>
+    <nav id="navbar" class="navbar sticky-top navbar-expand-md" style="background: linear-gradient(to right, #AFEEEE 50%, rgba(1, 124, 124, 30%) 100%); margin: 0; padding: 0;">
+        <div class="container-fluid">
+            <button id="menu-bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#protection-menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="menu-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/menu-icon.png">
+            </button>
+            <div class="collapse navbar-collapse" id="protection-menu">
+                <div id="navbar-nav" class="navbar-nav">
+                    <a class="nav-link navigation-links active-page " aria-current="page" href="index.html" style="margin-right: 2rem;">Home</a>
+                    <a class="nav-link navigation-links" href="#services" style="margin-right: 2rem;">Services</a>
+                    <a class="nav-link navigation-links" href="#" style="margin-right: 2rem;">About</a>
+                    <a class="nav-link navigation-links" href="#" style="margin-right: 2rem;">Contact Us</a>
+                </div>
+            </div>
+            </div>
+    </nav>
+
+    <section>
+        <div>
+            <h1 style="text-align: center;">
+                Thank you for reaching out to us.<br/>
+               
+            </h1>
+        </div>
+    </section>
+    <footer>
+        <div class="social-container">
+            <a href="#" target="_blank"><img class="social-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/facebook-icon.png"></a>
+            <a href="https://www.instagram.com/protectionconxion/" target="_blank"><img class="social-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/instagram-icon.png"></a>
+            <a href="mailto:info@protectionconxion.co.za?subject=Online Enquiry!&body=To whom it may concern," target="_blank"><img class="social-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/email-icon.png"></a>
+        </div>
+    
+        <div class="rights">
+            <p class="copy-rights">Protection Con-x-ion (Pty) Ltd. 2018/405681/07 &copy; Copy Right Reserved 2021</p>
+        </div>
+    </footer>
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+   
+</body>
+</html>
