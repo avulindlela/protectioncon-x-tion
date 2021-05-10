@@ -150,10 +150,15 @@
                 border-bottom: 2px solid #AFEEEE;
             }
 
+            
+
             .active-page {
                 color: black;
                 font-weight: bold;
-                border-bottom: 2px solid #AFEEEE;
+                border-bottom: 2px solid rgba(1, 124, 124, 100%);
+            }
+            .active-page1 {
+                border-bottom: 2px solid #AFEEEE !important;
             }
 
             
@@ -167,9 +172,18 @@
                 top: 2.5rem;
             }
 
-            #navbar-nav {
-                background:  #AFEEEE ;
+            .active-page {
+                color: black;
+                font-weight: bold;
+                border-bottom: 2px solid rgba(1, 124, 124, 100%);
             }
+
+            .active-page1 {
+                color: black;
+                font-weight: bold;
+                border-bottom: 2px solid #AFEEEE !important; 
+            }
+
 
             
 
@@ -186,23 +200,23 @@
             <img class="brand-logo" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/logo.png" alt="ourfuturetalentmanagement">
         </a>
     </div>
-    <nav id="navbar" class="navbar sticky-top navbar-expand-md" style="background: linear-gradient(to right, #AFEEEE 50%, rgba(1, 124, 124, 30%) 100%); margin: 0; padding: 0;">
+    <nav id="navbar" class="navbar sticky-top navbar-expand-md" >
         <div class="container-fluid">
             <button id="menu-bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#protection-menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <img class="menu-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/menu-icon.png">
             </button>
             <div class="collapse navbar-collapse" id="protection-menu">
                 <div id="navbar-nav" class="navbar-nav">
-                    <a class="nav-link navigation-links active-page " aria-current="page" href="index.html" style="margin-right: 2rem;">Home</a>
-                    <a class="nav-link navigation-links" href="#services" style="margin-right: 2rem;">Services</a>
-                    <a class="nav-link navigation-links" href="#" style="margin-right: 2rem;">About</a>
+                    <a id="nav-home" class="nav-link navigation-links active-page" aria-current="page" href="index.html" style="margin-right: 2rem;">Home</a>
+                    <a id="nav-services" class="nav-link navigation-links" href="#first-content-section" style="margin-right: 2rem;">Services</a>
+                    <a class="nav-link navigation-links" href="about.html" style="margin-right: 2rem;">About</a>
                     <a class="nav-link navigation-links" href="contact.html" style="margin-right: 2rem;">Contact Us</a>
                 </div>
             </div>
             </div>
     </nav>
 
-    <section>
+    <section id="home">
         <div class="first-section">
             <div class="first-section-text">
                 <h1>
@@ -217,7 +231,7 @@
         </div>
     </section>
 
-    <section id="services" class="section-two">
+    <section id="first-content-section" class="section-two">
         <div class="second-section">
             <h1 class="second-section-title">
                 What we offer

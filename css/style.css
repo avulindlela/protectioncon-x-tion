@@ -13,6 +13,12 @@ body {
 
 
 /**Nav Bar **/
+#navbar {
+	background: transparent;
+	margin: 0; 
+	padding: 0;
+}
+
 .navigation-links {
     color:#AFEEEE;
 }
@@ -28,6 +34,11 @@ body {
     margin:0 2rem 0 auto;
     position: relative;
     top: 2.5rem;
+}
+
+.scroll-nav {
+	transition: 0.1s ease-in-out;
+	background: rgba(1, 124, 124, 100%) !important;
 }
 
 .menu-icon {
@@ -108,6 +119,20 @@ body {
     display: flex;
     justify-content: center;
 }
+
+
+/*******Text changing****/
+/* body{
+	background-image: url(https://i.postimg.cc/9FmspFn3/1.jpg);
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position: center center;
+	background-repeat:no-repeat;
+	} */
+	
+	
+	
+
 
 /****cookies***/
 .cookieConsentContainer {

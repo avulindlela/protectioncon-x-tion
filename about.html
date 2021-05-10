@@ -1,50 +1,350 @@
-<html>
-	<head>
-		<title> About | Protection Con-X-ion </title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protection Con-x-ion | Home</title>
 
-	<div class ="container">
-		<div class ="head shine">
-			<div id="brand">
-				<h1> Protection <br><span class="brandh">Con-X-ion</span></h1>
-			</div>
-			
-			<div id="logo">
-				<img src="https://scontent-jnb1-1.xx.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/86192166_998163363917145_3567276733704962048_n.jpg?_nc_cat=110&_nc_sid=110474&efg=eyJpIjoidCJ9&_nc_eui2=AeHIXw3cNTPIY_BFDgFZBRNB8nIqqQJuqenyciqpAm6p6XsStlGemMy03aHvL3l564rd7JhfnM7katb-UINanKRP&_nc_ohc=MZGu4ogZGPUAX_KJ8Is&_nc_ht=scontent-jnb1-1.xx&tp=14&oh=d1be4a93553ae690ea94fcb6f22cfce0&oe=5F47FCC8">
-			</div>
-		</div>
-		
-		<div id ="content">
-			<div id="nav">
-				<ul>
-					<li > <a href="home.html" class="forward">Home</a></li>
-					<li> <a href="about.html" class="selected forward">About </a></li>
-					<li><a href="services.html" class="forward"> Services </a></li>
-					<li><a href ="contact.html" class="forward"> Contact </a></li>
-				</ul>
-			</div>
-			
-			<div id="clr">
-			
-			</div>
-			<div id="main">
-			
-				<h1> About</h1>
-				
-				<p>Protection Conxion (Pty) Ltd Security Sector is a part of Ms. Hazel Tau has seen the need to serve and protect the legacy of people and citizens of South Africa. It took her many years to plan for this Security sector involving a lot of experienced security personnel, now Protection Conxion (Pty) Ltd is ready to help the South African to fight crime and protect. Prote Conxion (Pty) Ltd is founded in 2018 under Security Sector. </p>
-				<p>Protection Conxion (Pty) surpass our competition in meeting the standards of what a security guard company consists of in the industry today. As a security provider we provide much more than to deter, detect and report. </p>
-				<p>Protection Conxion (Pty) Ltd is the next generation of contract security providers. We know what it takes to keep you and your business safe, but more importantly, we know how to add value to your company by providing superior customer service and attention to detail. We take ownership of every customer's company and property. We are proud of what you and your company have accomplished and ensure that each of our security guards displays that pride to you and your customers through their appearance and attitude. At Protection Conxion (Pty) Ltd, we care about our customers and their business. We focus on detail that will bring your company, homes & business to the forefront in your industry. </p>
-				<p>Protection Conxion (Pty) Ltd, we will add value to your company, homes by providing you more than a deterrent; we will provide that first impression and customer service that will set your company ahead of your competition.</p>
+    <link rel="icon" href="https://mmatiniu.sirv.com/protectionconxion.co.za/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            '6LdsTr8aAAAAAHiVaNft9vNHcwntwzBSN4T_y7pC' : '6LdsTr8aAAAAAJi5gAAmyy2fz5B7NmUKvdLPwTUW'
+          });
+        };
+    </script>
+
+    <style>
+
+        #navbar-nav{
+            background-image: url(https://mmatiniu.sirv.com/protectionconxion.co.za/images/nav-background.png); 
+            background-size:cover; 
+            width: 60%;
+
+        }
+
+        .first-section {
+            background-image: url(https://mmatiniu.sirv.com/protectionconxion.co.za/images/home-background-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:fixed;
+        }
+
+        .btn:hover {
+            background-color: #AFEEEE !important;
+            color: black !important;
+        }
+
+        .section-two {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            width: 20rem;
+            height: 20rem;
+            background-size:contain;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left:auto;
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .card-content  {
+                position: absolute;
+                transition: 0.4s ease-in-out;
+                top:0rem;
+                padding-top: 17rem;
+
+            }
+
+        .card-content:hover {
+                position: absolute;
+                top: -17rem;
+                opacity: 1;
+            }
+
+        .card-content:hover p{
+                opacity: 1;
+            }
+
+        .card-content p {
+                background: #AFEEEE;
+                padding: 0 10px;
+                opacity: 0;
+                transition: 0.4s ease-in-out;
+                font-size: small;
+                height: 18rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18rem;
+                flex-direction: column;
+                
+            }
+
+        #about {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            width: 70%;
+            margin: auto;
+        }
+
+        .about-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            margin: auto;
+            padding-bottom: 5rem;
+        }
+
+        .header-area {
+            width: 50%;
+            margin: auto;
+        }
+
+       
+
+        /* #card-additional-info {
+            position:relative;
+        } */
+
+        #service-card-add-info {
+            background: #AFEEEE;
+            width: 15rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .more-service {
+            background-color: rgba(175,238,238, 70%);
+            padding: 3px;
+            border-radius: 10%;
+        }
+
+        .card-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
 
 
-			</div>
-		</div>
-		
-		<div id="footer">
-			Copyright &copy; 2020
-		</div>
-	</div>
-	</body>
+        .third-section {
+            height: 40vmax;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://mmatiniu.sirv.com/protectionconxion.co.za/images/home-background-2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        
+
+
+        /*Queries*/
+        @media screen and (max-width: 760px) {
+            #navbar-nav {
+                background: transparent;
+            }
+
+            .navigation-links {
+                color:Black;
+            }
+
+            .navigation-links:hover {
+                color:Black;
+                font-weight: bold;
+                border-bottom: 2px solid #AFEEEE;
+            }
+
+            
+
+            .active-page {
+                color: black;
+                font-weight: bold;
+                border-bottom: 2px solid rgba(1, 124, 124, 100%);
+            }
+            .active-page1 {
+                border-bottom: 2px solid #AFEEEE !important;
+            }
+
+            
+        }
+
+        @media screen and (max-width: 470px) {
+            .navigation-brand {
+                width: 30%;
+                margin:0 2rem 0 auto;
+                position: relative;
+                top: 2.5rem;
+            }
+
+            .active-page {
+                color: black;
+                font-weight: bold;
+                border-bottom: 2px solid rgba(1, 124, 124, 100%);
+            }
+
+            .active-page1 {
+                color: black;
+                font-weight: bold;
+                border-bottom: 2px solid #AFEEEE !important; 
+            }
+
+
+            
+
+            /* #navbar {
+                background: linear-gradient(to right, #AFEEEE 40%, rgba(1, 124, 124, 70%) 100%) !important;
+            } */
+
+        }
+    </style>
+</head>
+<body onscroll="collapseMenu()">
+    <div class="navigation-brand">
+        <a href="index.html">
+            <img class="brand-logo" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/logo.png" alt="ourfuturetalentmanagement">
+        </a>
+    </div>
+    <nav id="navbar" class="navbar sticky-top navbar-expand-md" >
+        <div class="container-fluid">
+            <button id="menu-bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#protection-menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="menu-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/menu-icon.png">
+            </button>
+            <div class="collapse navbar-collapse" id="protection-menu">
+                <div id="navbar-nav" class="navbar-nav">
+                    <a id="nav-home" class="nav-link navigation-links active-page" aria-current="page" href="index.html" style="margin-right: 2rem;">Home</a>
+                    <a id="nav-services" class="nav-link navigation-links" href="#first-content-section" style="margin-right: 2rem;">Services</a>
+                    <a class="nav-link navigation-links" href="about.html" style="margin-right: 2rem;">About</a>
+                    <a class="nav-link navigation-links" href="contact.html" style="margin-right: 2rem;">Contact Us</a>
+                </div>
+            </div>
+            </div>
+    </nav>
+
+    <section id="about">
+        <h1>About Us</h1>
+
+        <p>
+            Protection Con-x-ion (PTY) LTD is a security company existing to make South Africa a safe and secure
+            place for citizens and tourists. We Impact the economy of South Africa, through creating job
+            opportunities. We give our clients peace of mind that they are safe. We empower our employees
+            personally and professionally by providing them with an environment that enables them to be free
+            and embody self-development.
+        </p>
+
+        <p>
+            Protection Con-x-ion (PTY) LTD was founded in 2018 under the Security Sector and surpasses the
+            competition in meeting the standards of what a security guard company consists of in the industry
+            today. As a security provider we provide much more than to deter, detect and report.
+        </p>
+
+        <p>
+            Protection Con-x-ion (PTY) LTD is the next generation of contract security providers. We know what it
+            takes to keep you and your business safe, but more importantly, we know how to add value to your
+            company by providing superior customer service and attention to detail. We take ownership of every
+            customer&#39;s company and property. We are proud of what you and your company have accomplished
+            and ensure that each of our security guards displays that pride to you and your customers through
+            their appearance and attitude. At Protection Con-x-ion (PTY) LTD, we care about our customers and
+            their business. We focus on detail that will bring your company, homes &amp; business to the forefront in
+            your industry.
+        </p>
+
+        <p>
+            Protection Con-x-ion (PTY) LTD will add value to your company and property by providing you more
+            than a deterrent; we will provide that first impression and customer service that will set your
+            company ahead of your competition.
+        </p>
+    </section>
+
+    <section>
+        <div class="item" data-aos="zoom-out">
+            <div class="about-card">
+                <img src="images/eye.png" alt="vision" width="150px">
+                <h3>Our Vision</h3>
+                <p>
+                    To bench mark security service company, comparable to any best in the industry, and meet
+                    international standard in security service.
+                </p>
+            </div>
+        </div>
+        
+        <div class="item" data-aos="zoom-in">
+            <div class="about-card">
+                <img src="images/mission.png" alt="vision" width="150px">
+                <h3>Our Mission</h3>
+                <p>
+                    To be committed to offer reliable cost-effective customer orientated security services by selecting
+                    best security guards, train and retain them to deliver quality service to our customers.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="about-card">
+            <h2>Why Us?</h2>
+            
+          
+        </div>
+        <div class="header-area">
+            <p>
+                Protection Con-x-ion offers <span class="animate"></span>
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-container">
+            <a href="#" target="_blank"><img class="social-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/facebook-icon.png"></a>
+            <a href="https://www.instagram.com/protectionconxion/" target="_blank"><img class="social-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/instagram-icon.png"></a>
+            <a href="mailto:info@protectionconxion.co.za?subject=Online Enquiry!&body=To whom it may concern," target="_blank"><img class="social-icon" src="https://mmatiniu.sirv.com/protectionconxion.co.za/images/email-icon.png"></a>
+        </div>
+    
+        <div class="rights">
+            <p class="copy-rights">Protection Con-x-ion (Pty) Ltd. 2018/405681/07 &copy; Copy Right Reserved 2021</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed('.animate', {
+          strings: [
+              "Quality Services.",
+              "Security.",
+              "Reliability.",
+              "Opportunity."
+          ],
+            typeSpeed: 70,
+            backSpeed: 70,
+            loop: true
+        });
+      </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+   
+</body>
 </html>
