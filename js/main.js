@@ -90,45 +90,7 @@ window.onload = function() { cookieConsent(); };
 
 
 
-const firstContentSection = document.getElementById("first-content-section");
 
-const navLi = document.querySelectorAll("nav .container-fluid .collapse .navbar-nav a");
-window.addEventListener("scroll", () => {
-    const landingPageYoffset = window.pageYOffset;
-
-    if (landingPageYoffset >= 160) {
-      let nav = document.getElementById('navbar');
-      let navbar = document.getElementById('navbar-nav');
-      nav.classList.add('scroll-nav');
-      navbar.classList.add('scroll-nav');
-    }
-
-    else {
-      let nav = document.getElementById('navbar');
-      let navbar = document.getElementById('navbar-nav');
-      nav.classList.remove('scroll-nav');
-      navbar.classList.remove('scroll-nav');
-    }
-
-    if (landingPageYoffset>= 570) {
-      let navServices = document.getElementById('nav-services');
-      let navHome = document.getElementById('nav-home');
-
-      navServices.classList.add('active-page');
-      navServices.classList.add('active-page1');
-      navHome.classList.remove('active-page');
-
-    }
-
-    else {
-      let navServices = document.getElementById('nav-services');
-      let navHome = document.getElementById('nav-home');
-
-      navServices.classList.remove('active-page');
-      navServices.classList.remove('active-page1');
-      navHome.classList.add('active-page');
-    }
-});
 
   // navLi.forEach((a) => {
   //   a.classList.remove("active-page");
