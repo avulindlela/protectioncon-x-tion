@@ -115,6 +115,8 @@
         .header-area {
             width: 50%;
             margin: auto;
+            text-align: center;
+            font-size: 1.5rem;
         }
 
        
@@ -307,7 +309,7 @@
         </div>
         <div class="header-area">
             <p>
-                Protection Con-x-ion offers <span class="animate"></span>
+                Get <span class="animate"></span>
             </p>
         </div>
     </section>
@@ -329,13 +331,13 @@
     <script>
         var typed = new Typed('.animate', {
           strings: [
-              "Quality Services.",
-              "Security.",
-              "Reliability.",
-              "Opportunity."
+              "Quality Services",
+              "Security",
+              "Reliability",
+              "Opportunity"
           ],
             typeSpeed: 70,
-            backSpeed: 70,
+            backSpeed: 80,
             loop: true
         });
       </script>
@@ -345,6 +347,30 @@
     </script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script>
+        const firstContentSection = document.getElementById("first-content-section");
+
+const navLi = document.querySelectorAll("nav .container-fluid .collapse .navbar-nav a");
+window.addEventListener("scroll", () => {
+    const landingPageYoffset = window.pageYOffset;
+
+    if (landingPageYoffset >= 160) {
+      let nav = document.getElementById('navbar');
+      let navbar = document.getElementById('navbar-nav');
+      nav.classList.add('scroll-nav');
+      navbar.classList.add('scroll-nav');
+    }
+
+    else {
+      let nav = document.getElementById('navbar');
+      let navbar = document.getElementById('navbar-nav');
+      nav.classList.remove('scroll-nav');
+      navbar.classList.remove('scroll-nav');
+    }
+
+   
+});
+    </script>
    
 </body>
 </html>

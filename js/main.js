@@ -90,8 +90,6 @@ window.onload = function() { cookieConsent(); };
 
 
 
-
-
   // navLi.forEach((a) => {
   //   a.classList.remove("active-page");
   //   if (a.classList.contains(current)) {
